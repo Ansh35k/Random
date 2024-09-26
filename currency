@@ -1,0 +1,71 @@
+print("This currency converter will allow you to convert only INR,KWD,USD,QAR,GBP,EURO back and forth")
+print('''For Kuwaiti Dinar enter 1
+For American Dollars enter 2
+For British Pounds enter 3
+For Euros enter 4
+For India Rupees 5''')
+curr1=eval(input("Enter the first currency:"))
+curr2=eval(input("Enter the second currency:"))
+B=eval(input("Enter the amount:"))
+if curr1==5 and curr2==1:
+    A=B*0.0037
+    print(A)
+elif curr1==1 and curr2==5:
+    A=B/0.0037
+    print(A)
+elif curr1==5 and curr2==2:
+    A=B*0.012
+    print(A)
+elif curr1==2 and curr2==5:
+    A=B/0.012
+    print(A)
+elif curr1==5 and curr2==3:
+    A=B*0.0096
+    print(A)
+elif curr1==3 and curr2==5:
+    A=B/0.0096
+    print(A)
+elif curr1==5 and curr2==4:
+    A=B*0.011
+    print(A)
+elif curr1==4 and curr2==5:
+    A=B/0.011
+    print(A)
+elif curr1==1 and curr2==3:
+    A=B*2.58
+    print(A)
+elif curr1==3 and curr2==1:
+    A=B/2.58
+    print(A)
+elif curr1==1 and curr2==2:
+    A=B*3.24
+    print(A)
+elif curr1==2 and curr2==1:
+    A=B/3.24
+    print(A)
+elif curr1==1 and curr2==4:
+    A=B*3.02
+    print(A)
+elif curr1==4 and curr2==1:
+    A=B/3.02
+    print(A)
+elif curr1==2 and curr2==3:
+    A=B*0.8
+    print(A)
+elif curr1==3 and curr2==2:
+    A=B/0.8
+    print(A)
+elif curr1==2 and curr2==4:
+    A=B*0.93
+    print(A)
+elif curr1==4 and curr2==2:
+    A=B/0.93
+    print(A)
+elif curr1==3 and curr2==4:
+    A=B*1.17
+    print(A)
+elif curr1==4 and curr2==3:
+    A=B/1.17
+    print(A)
+else:
+    print("Error")
